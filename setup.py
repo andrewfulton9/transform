@@ -110,7 +110,8 @@ setup(
     ],
     namespace_packages=[],
     install_requires=_make_required_install_packages(),
-    extras_require= {
+    extras_require={
+      "dev": ["pre-commit"],
       'docs': _make_docs_packages(),
     },
     python_requires='>=3.9,<4',
